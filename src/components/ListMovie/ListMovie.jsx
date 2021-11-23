@@ -25,8 +25,11 @@ const ListMovie = ({ movies, currentPage, count, onChangePage }) => {
                     }${movie.id}`,
                     state: {
                       form: {
-                        location,
-                        label: "Home page",
+                        location: location,
+                        label:
+                          location.pathname === "/"
+                            ? "Home Pages"
+                            : "Movies pages",
                       },
                     },
                   }}

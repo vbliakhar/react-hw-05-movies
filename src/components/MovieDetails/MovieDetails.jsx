@@ -41,7 +41,12 @@ const MovieDetails = () => {
       {/* <PageHeading text={`test ${moviesId}`} /> */}
       {movie && (
         <>
-          <button className={style.button} type="button" onClick={onGoBack}>
+          <button
+            className={style.button}
+            style={{ width: "180px" }}
+            type="button"
+            onClick={onGoBack}
+          >
             {location?.state?.form?.label ?? "Go back"}
           </button>
           <hr />
