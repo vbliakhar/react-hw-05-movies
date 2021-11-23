@@ -1,0 +1,31 @@
+.blockImg {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .blockImg {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background: red;
+  }
+  li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+.button {
+  background: sandybrown;
+}
+.button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+  cursor: pointer;
+}
+.button::before {
+  content: "\21FD";
+}

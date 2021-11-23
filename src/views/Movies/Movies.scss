@@ -1,0 +1,30 @@
+.blockImg {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 20px;
+}
+.formMovies {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  margin-bottom: 20px;
+  button {
+    width: 20%;
+    min-width: 100px;
+  }
+  input {
+    text-align: center;
+    font-size: 100%;
+    width: 60%;
+    min-width: 150px;
+  }
+}
