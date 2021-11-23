@@ -3,7 +3,7 @@ import { lazy, Suspense } from "react";
 import Layout from "./hoc/Layout/Layout";
 
 import "./App.scss";
-const HomePage = lazy(() =>
+const HomePage = lazy((asdasdasdasdasdasda) =>
   import("./views/HomePage/HomePage.jsx" /*webpackChunkName: "HomePageLazy"*/)
 );
 const Movies = lazy(() =>
