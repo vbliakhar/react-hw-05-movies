@@ -24,3 +24,31 @@
   list-style: none;
   margin-right: 10px;
 }
+@media (max-width: 800px) {
+  .position-cast {
+    margin: 20px auto;
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+    margin: -40px;
+  }
+  .slick-arrow::before {
+    background: red;
+    color: white;
+  }
+  .slick-arrow:hover {
+    background: red;
+    color: white;
+  }
+  .li-block {
+    list-style: none;
+    margin-right: 10px;
+  }
+}

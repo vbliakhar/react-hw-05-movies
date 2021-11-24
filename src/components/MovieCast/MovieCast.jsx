@@ -8,11 +8,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./MovieCast.scss";
+import { useMediaQuery } from "react-responsive";
 
 const MovieCast = ({ movie }) => {
   const { moviesId } = useParams();
   const [actors, setActors] = useState(null);
   const [isLoader, setLoader] = useState(false);
+
+  const helper = useMediaQuery({ query: "(max-width: 800px)" });
 
   useEffect(() => {
     setLoader((isLoading) => !isLoading);
@@ -29,11 +32,11 @@ const MovieCast = ({ movie }) => {
       });
   }, [moviesId]);
   const settings = {
-    dots: true,
+    dots: helper ? false : true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToShow: helper ? 1 : 4,
+    slidesToScroll: helper ? 1 : 3,
     arrows: true,
   };
 
